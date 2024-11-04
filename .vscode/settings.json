@@ -4,4 +4,8 @@
     "cmake.configureOnOpen": false,
     "zephyr-ide.use-zephyr-ide-json": true,
     "zephyr-ide.projects": null,
+    "files.associations": {
+        "adxl345.h": "c",
+        "accelerometer.h": "c"
+    },
 }
