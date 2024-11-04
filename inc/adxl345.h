@@ -7,6 +7,8 @@
 #ifndef ZEPHYR_DRIVERS_SENSOR_ADX345_ADX345_H_
 #define ZEPHYR_DRIVERS_SENSOR_ADX345_ADX345_H_
 
+#include <zephyr/types.h>
+#include <zephyr/device.h>
 #include <zephyr/drivers/gpio.h>
 #if DT_ANY_INST_ON_BUS_STATUS_OKAY(i2c)
 #include <zephyr/drivers/i2c.h>
