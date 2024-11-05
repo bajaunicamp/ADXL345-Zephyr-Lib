@@ -1,16 +1,16 @@
 {
   "projects": {
-    "MMA845X-Zephyr-Lib": {
+    "ADXL345-Zephyr-Lib_copy": {
       "rel_path": "",
-      "name": "MMA845X-Zephyr-Lib",
+      "name": "ADXL345-Zephyr-Lib_copy",
       "buildConfigs": {
         "build/stm32_min_dev": {
-          "relBoardDir": "../../.zephyr_ide/external/zephyr/boards",
+          "relBoardDir": "external/zephyr/boards",
           "board": "stm32_min_dev",
-          "relBoardSubDir": "/home/lucas/.zephyr_ide/external/zephyr/boards/others/stm32_min_dev",
+          "relBoardSubDir": "external/zephyr/boards/others/stm32_min_dev",
           "name": "build/stm32_min_dev",
           "westBuildArgs": "",
-          "westBuildCMakeArgs": " -DCONFIG_NO_OPTIMIZATIONS=y",
+          "westBuildCMakeArgs": " -DCONFIG_SIZE_OPTIMIZATIONS=y ",
           "confFiles": {
             "config": [],
             "extraConfig": [],
@@ -18,12 +18,39 @@
             "extraOverlay": []
           },
           "runnerConfigs": {
-            "openocd": {
-              "runner": "openocd",
-              "name": "openocd",
+            "default": {
+              "runner": "default",
+              "name": "default",
               "args": ""
             }
           }
+        }
+      },
+      "confFiles": {
+        "config": [],
+        "extraConfig": [],
+        "overlay": [],
+        "extraOverlay": []
+      }
+    },
+    "sensor_shell": {
+      "rel_path": "sensor_shell",
+      "name": "sensor_shell",
+      "buildConfigs": {
+        "build/stm32_min_dev": {
+          "relBoardDir": "external/zephyr/boards",
+          "board": "stm32_min_dev",
+          "relBoardSubDir": "external/zephyr/boards/others/stm32_min_dev",
+          "name": "build/stm32_min_dev",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_SIZE_OPTIMIZATIONS=y ",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {}
         }
       },
       "confFiles": {

@@ -6,6 +6,7 @@
     "zephyr-ide.projects": null,
     "files.associations": {
         "adxl345.h": "c",
-        "accelerometer.h": "c"
+        "accelerometer.h": "c",
+        "sensor.h": "c"
     },
 }
