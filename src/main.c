@@ -19,7 +19,7 @@ int main(){
         LOG_INF("Xa: %f m/s²\nYa: %f m/s²\nZa: %f m/s²\n", data[0], data[1], data[2]);
     
         adxl345_read_speed(data);
-        LOG_INF("Xv: %f m/s²\nYv: %f m/s²\nZv: %f m/s²\n", data[0], data[1], data[2]);
+        LOG_INF("Xv: %f m/s\nYv: %f m/s\nZv: %f m/s\n", data[0], data[1], data[2]);
 
     }
 }
