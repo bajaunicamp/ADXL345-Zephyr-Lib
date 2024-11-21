@@ -5,7 +5,7 @@ Essa biblioteca fornece o código necessário para controlar um acelerômetro AD
 ## Como conectar o sensor
 - Caso queira ler os logs do STM, conecte o RX de um leitor UART ao pino A9.
 - Conecte o pino GND ao ground.
-- Conecte o pino VCC+5V a uma fonte de tensão de 5V.
+- Conecte o pino VS a uma fonte de tensão de 3.3V.
 - Conecte o pino SCL ao pino A5 do STM.
 - Conecte o pino SDA ao pino A7 do STM.
 - Conecte o pino CS ao pino A4 do STM.

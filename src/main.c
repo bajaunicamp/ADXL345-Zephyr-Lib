@@ -9,8 +9,9 @@ LOG_MODULE_REGISTER();
   
 int main(){
     double data[3];
+    adxl345_init();
     while(1){
-        k_msleep(100);
+        k_msleep(1000);
         if(adxl345_read_acceleration(data)){
             LOG_ERR("Não foi possível ler os dados do acelerômetro");
             continue;
