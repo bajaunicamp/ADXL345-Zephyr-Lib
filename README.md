@@ -15,11 +15,14 @@ Essa biblioteca fornece o código necessário para controlar um acelerômetro AD
 ## Como usar a biblioteca
 1. Execute a função **adxl345_init**. Essa função pode ser executada sempre que for necessário reiniciar o registro de velocidade.
 
-2. Em seguida, basta utilizar as funções **adxl345_read_acceleration** e **adxl345_read_speed** para ler a aceleração e a velocidade conforme necessário.
+2. Em seguida, basta utilizar as funções **adxl345_read_acceleration** e **adxl345_read_speed**<span style="color:red"> (NÃO ESTÁ FUNCIONANDO)</span>. para ler a aceleração e a velocidade conforme necessário.
 
 ## Sobre os logs do STM
 Caso haja algum problema ao se comunicar com o sensor, será emitido um log de erro.
 
 
 ## Possíveis problemas / problemas conhecidos
+- A medição de velocidade está incorreta por 2 motivos:
+    - Apenas com o acelerômetro não é possível diferenciar rotação de aceleração. Seria necessário um giroscópio para que seja possível medir a velocidade mesmo com rotação do acelerômetro.
+    - Como estamos utilizando um método de integrar a aceleração ao longo do tempo para obter a velocidade, há acúmulo de erros do sensor ao longo prazo.
 - É possível melhorar a precisão da leitura de velocidade se os interrupts gerados pelo sensor forem utilizados.
