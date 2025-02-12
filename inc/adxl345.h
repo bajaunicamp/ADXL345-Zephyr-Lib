@@ -2,6 +2,17 @@
 #define ADXL345_H
 
 /**
+ * @file
+ * @brief Biblioteca para comunicação com o acelerômetro ADXL345.
+ *
+ * Este arquivo contém as definições e funções necessárias para inicialiazar 
+ * e ler dados do acelerômetro ADL345 de acordo com as necessidades da equipe
+ * UNICAP Baja SAE
+ *
+ * @author Lucas Mendonça
+ */
+
+/**
  * @brief Inicializa as variáveis utilizadas pelas funções do acelerômetro e
  * configura o timer de leitura dos dados.
  * 
@@ -13,7 +24,9 @@ void adxl345_init();
  * esses valores (nessa ordem) no vetor readings.
  * 
  * @param readings Vetor de tamanho 3 onde serão escritas as leituras de aceleração do acelerômetro
- * @return 0, caso a leitura seja bem-sucedida. Caso contrário, retorna algum valor negativo
+ * @return 
+ * - `0`: caso a leitura seja bem-sucedida 
+ * - `< 0`: leitura mal-sucedida
  */
 int adxl345_read_acceleration(double readings[3]);
 
