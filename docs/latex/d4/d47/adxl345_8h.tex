@@ -1,0 +1,78 @@
+\doxysection{Referência do Arquivo inc/adxl345.h}
+\hypertarget{adxl345_8h}{}\label{adxl345_8h}\index{inc/adxl345.h@{inc/adxl345.h}}
+
+
+Biblioteca para comunicação com o acelerômetro ADXL345.  
+
+
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{adxl345_8h_af4696ee61fb29e202702a6a0a9355857}{adxl345\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa as variáveis utilizadas pelas funções do acelerômetro e configura o timer de leitura dos dados. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{adxl345_8h_a202896699b580231a2dd62e9e13ea1d3}{adxl345\+\_\+read\+\_\+acceleration}} (double readings\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Lê as acelerações nas direções x, y e z do acelerômetro e registra esses valores (nessa ordem) no vetor readings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{adxl345_8h_a9daf164e3a1edfd0fa148454f0aafa32}{adxl345\+\_\+read\+\_\+speed}} (double readings\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fornece a velocidade do acelerômetro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Biblioteca para comunicação com o acelerômetro ADXL345. 
+
+Este arquivo contém as definições e funções necessárias para inicialiazar e ler dados do acelerômetro ADL345 de acordo com as necessidades da equipe UNICAP Baja SAE
+
+\begin{DoxyAuthor}{Autor}
+Lucas Mendonça 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Funções}
+\Hypertarget{adxl345_8h_af4696ee61fb29e202702a6a0a9355857}\index{adxl345.h@{adxl345.h}!adxl345\_init@{adxl345\_init}}
+\index{adxl345\_init@{adxl345\_init}!adxl345.h@{adxl345.h}}
+\doxysubsubsection{\texorpdfstring{adxl345\_init()}{adxl345\_init()}}
+{\footnotesize\ttfamily \label{adxl345_8h_af4696ee61fb29e202702a6a0a9355857} 
+void adxl345\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa as variáveis utilizadas pelas funções do acelerômetro e configura o timer de leitura dos dados. 
+
+\Hypertarget{adxl345_8h_a202896699b580231a2dd62e9e13ea1d3}\index{adxl345.h@{adxl345.h}!adxl345\_read\_acceleration@{adxl345\_read\_acceleration}}
+\index{adxl345\_read\_acceleration@{adxl345\_read\_acceleration}!adxl345.h@{adxl345.h}}
+\doxysubsubsection{\texorpdfstring{adxl345\_read\_acceleration()}{adxl345\_read\_acceleration()}}
+{\footnotesize\ttfamily \label{adxl345_8h_a202896699b580231a2dd62e9e13ea1d3} 
+int adxl345\+\_\+read\+\_\+acceleration (\begin{DoxyParamCaption}\item[{double}]{readings}{\mbox{[}3\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Lê as acelerações nas direções x, y e z do acelerômetro e registra esses valores (nessa ordem) no vetor readings. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em readings} & Vetor de tamanho 3 onde serão escritas as leituras de aceleração do acelerômetro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\begin{DoxyItemize}
+\item {\ttfamily 0}\+: caso a leitura seja bem-\/sucedida
+\item {\ttfamily \texorpdfstring{$<$}{<} 0}\+: leitura mal-\/sucedida 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\Hypertarget{adxl345_8h_a9daf164e3a1edfd0fa148454f0aafa32}\index{adxl345.h@{adxl345.h}!adxl345\_read\_speed@{adxl345\_read\_speed}}
+\index{adxl345\_read\_speed@{adxl345\_read\_speed}!adxl345.h@{adxl345.h}}
+\doxysubsubsection{\texorpdfstring{adxl345\_read\_speed()}{adxl345\_read\_speed()}}
+{\footnotesize\ttfamily \label{adxl345_8h_a9daf164e3a1edfd0fa148454f0aafa32} 
+void adxl345\+\_\+read\+\_\+speed (\begin{DoxyParamCaption}\item[{double}]{readings}{\mbox{[}3\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Fornece a velocidade do acelerômetro. 
+
+Para obter a velocidade, presume-\/se que a velocidade inicial (no momento em que a função adxl345\+\_\+init é chamada) é 0 e então a aceleração é lida periodicamente. A partir disso, determinamos as variações da velocidade ao longo do tempo.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em readings} & Vetor de tamanho 3 onde serão escritas as velocidades calculadas das direções x, y e z, nesta ordem \\
+\hline
+\end{DoxyParams}

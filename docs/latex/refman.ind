@@ -1,0 +1,18 @@
+\begin{theindex}
+
+  \item {adxl345.h}
+    \subitem {adxl345\_init}, \hyperpage{3}
+    \subitem {adxl345\_read\_acceleration}, \hyperpage{3}
+    \subitem {adxl345\_read\_speed}, \hyperpage{3}
+  \item {adxl345\_init}
+    \subitem {adxl345.h}, \hyperpage{3}
+  \item {adxl345\_read\_acceleration}
+    \subitem {adxl345.h}, \hyperpage{3}
+  \item {adxl345\_read\_speed}
+    \subitem {adxl345.h}, \hyperpage{3}
+
+  \indexspace
+
+  \item {inc/adxl345.h}, \hyperpage{3, 4}
+
+\end{theindex}
