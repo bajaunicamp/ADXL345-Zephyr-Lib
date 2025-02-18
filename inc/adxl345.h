@@ -5,9 +5,9 @@
  * @file
  * @brief Biblioteca para comunicação com o acelerômetro ADXL345.
  *
- * Este arquivo contém as definições e funções necessárias para inicialiazar 
- * e ler dados do acelerômetro ADL345 de acordo com as necessidades da equipe
- * UNICAP Baja SAE
+ * Este arquivo contém as definições e funções necessárias para inicializar 
+ * e ler dados do acelerômetro ADXL345 de acordo com as necessidades da equipe
+ * UNICAMP Baja SAE
  *
  * @author Lucas Mendonça
  */
